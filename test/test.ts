@@ -11,9 +11,10 @@ describe("Burn", function () {
 
 })
 
-describe("Transfer", function () {
+describe("Approve", function () {
 
 })
+
 
 describe("Transfer From", function () {
 

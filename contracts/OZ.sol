@@ -7,8 +7,14 @@ contract OpenZeppelin is ERC721 {
 
     constructor () ERC721("OpenZeppelin", "OZ") {}
 
-    function mint () public {
-        
+    function mint (address to, uint256 tokenId) external {
+        _mint(to, tokenId);
     }
+
+    function burn (uint256 tokenId) external {
+        _burn(tokenId);
+    }
+
+
 
 }

@@ -7,8 +7,8 @@ contract Chiru is ERC721A {
 
     constructor () ERC721A("OpenZeppelin", "OZ") {}
 
-    function mint (address to, uint256 tokenId) external {
-        _mint(to, tokenId);
+    function mint (address to, uint256 quantity) external {
+        _mint(to, quantity);
     }
 
     function burn (uint256 tokenId) external {

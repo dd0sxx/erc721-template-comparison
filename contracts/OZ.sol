@@ -15,6 +15,4 @@ contract OpenZeppelin is ERC721 {
         _burn(tokenId);
     }
 
-
-
 }

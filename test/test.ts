@@ -31,18 +31,18 @@ beforeEach(async function () {
 describe("Mint", async function () {
     await oz.mint(owner.address, 0)
     await solm8.mint(owner.address, 0)
-    await chiru.mint(owner.address, 0)
+    await chiru.mint(owner.address, 1)
 })
 
 describe("Burn", async function () {
-    it.only("should mint", async function () {
+    it("should mint", async function () {
         await oz.mint(owner.address, 0)
         await solm8.mint(owner.address, 0)
-        await chiru.mint(owner.address, 0)
+        await chiru.mint(owner.address, 1)
         
-        // await oz.burn(0)
-        // await solm8.burn(0)
-        // await chiru.burn(0)
+        await oz.burn(0)
+        await solm8.burn(0)
+        await chiru.burn(0)
     })
 })
 
@@ -50,7 +50,7 @@ describe("Approve", async function () {
     it("should approve", async function () {
         await oz.mint(owner.address, 0)
         await solm8.mint(owner.address, 0)
-        await chiru.mint(owner.address, 0)
+        await chiru.mint(owner.address, 1)
         
         await oz.approve(addr2.address, 0)
         await solm8.approve(addr2.address, 0)
@@ -63,7 +63,7 @@ describe("Transfer From", async function () {
     it("should transfer from", async function () {
         await oz.mint(owner.address, 0)
         await solm8.mint(owner.address, 0)
-        await chiru.mint(owner.address, 0)
+        await chiru.mint(owner.address, 1)
         
         await oz.approve(addr2.address, 0)
         await solm8.approve(addr2.address, 0)

@@ -7,6 +7,7 @@
   "dependencies": {
     "@openzeppelin/contracts": "^4.7.3",
     "erc721a": "^4.2.2",
+    "hardhat-gas-reporter": "^1.0.8",
     "solmate": "^6.5.0"
   }
 }

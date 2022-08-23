@@ -58,7 +58,6 @@ describe("Approve", async function () {
     })
 })
 
-
 describe("Transfer From", async function () {
     it("should transfer from", async function () {
         await oz.mint(owner.address, 0)
@@ -74,6 +73,7 @@ describe("Transfer From", async function () {
         await chiru.transferFrom(owner.address, addr2.address, 0)
     })
 })
+
 
 // describe("Bulk Mint", async function () {
 
